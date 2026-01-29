@@ -329,21 +329,21 @@ body {
   background-image: url("../images/main/paw.svg");
   background-repeat: no-repeat;
   background-position: 163px 81px;
-  background-size: auto;
+  background-size: 75px 75px;
 }
 
 .comfort-blocks .comfort-item:nth-child(2) {
   background-image: url("../images/main/house.svg");
   background-repeat: no-repeat;
   background-position: 163px 82px;
-  background-size: auto;
+  background-size: 75px 75px;
 }
 
 .comfort-blocks .comfort-item:nth-child(3) {
   background-image: url("../images/main/phone.svg");
   background-repeat: no-repeat;
   background-position: 168px 79px;
-  background-size: auto;
+  background-size: 75px 75px;
 }
 
 .interest {
