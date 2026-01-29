@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приют</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header class="header" data-test="header">
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="link logo active"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a></li>
+          <li class="fake-logo"></li>
+          <li><a href="index.html" class="menu-link active-link link">Главная</a></li>
+          <li><a href="#about" class="menu-link link">О приюте</a></li>
+          <li><a href="catalog.html" class="menu-link link">Наши животные</a></li>
+        </ul>
+        <ul class="nav-buttons">
+          <li><button class="request-button link" id="openModal1">Забрать питомца!</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" data-test="main">
+      <section class="banner" data-test="hero">
+        <span class="visually-hidden">Фоновое фото: сидящие рядом кошки и собаки.</span>
+        <h1 class="visually-hidden">Дарим хвостикам счастье!</h1>
+        <img class="decor" alt="Декоративный элемент белого цвета." src="images/header/divider.png" width="1200" height="57">
+      </section>
+      <section class="about" id="about" data-test="advantages">
+        <div class="head-div">
+          <h2 class="header-2">*** - приют – это уютный дом для тех питомцев,<br/>которым пока не посчастливилось<br/>обрести семью.</h2>
+          <p class="post-header">Чем же именно мы занимаемся?</p>
+        </div>
+        <div class="about-blocks">
+          <div class="off-list">
+            <h3 class="header-3">Надёжный&nbsp;приют</h3>
+            <img alt="Горизонтальная полоска." src="images/main/rectangle-white.png" width="60" height="2">
+            <p class="paragraph">Предоставляем временное жильё<br/>животным, оказавшимся<br/>в сложной ситуации</p>
+          </div>
+          <div class="image-element">
+            <img alt="Фото: серая кошка." src="images/main/cat.jpg" width="800" height="385">
+          </div>
+          <ul class="about-list">
+            <li class="about-item">
+              <h3 class="header-3">Лечение</h3>
+              <img alt="Горизонтальная полоска." src="images/main/rectangle-black.png" width="60" height="2">
+              <p class="paragraph">Оказываем ветеринарную помощь,<br/>проводим вакцинацию и стерилизацию</p>
+            </li>
+            <li class="about-item">
+              <h3 class="header-3">Уход</h3>
+              <img alt="Горизонтальная полоска." src="images/main/rectangle-black.png" width="60" height="2">
+              <p class="paragraph">Обеспечиваем сбалансированное<br/>питание, гигиенический уход<br/>и физическую активность</p>
+            </li>
+            <li class="about-item">
+              <h3 class="header-3">Поиск дома</h3>
+              <img alt="Горизонтальная полоска." src="images/main/rectangle-black.png" width="60" height="2">
+              <p class="paragraph">Активно ищем любящих владельцев,<br/>готовых подарить тепло и заботу<br/>нашим подопечным</p>
+            </li>
+          </ul>
+          <div class="image-element">
+            <img alt="Фото: пёс на белом фоне." src="images/main/dog.jpg" width="800" height="385">
+          </div>
+          <div class="off-list">
+            <h3 class="header-3">Социализация</h3>
+            <img alt="Горизонтальная полоска." src="images/main/rectangle-white.png" width="60" height="2">
+            <p class="paragraph">Помогаем животным адаптироваться<br/>к новому дому, а их новым хозяевам<br/>грамотно заботиться о питомцах</p>
+          </div>
+        </div>
+      </section>
+      <section class="comfort" data-test="service">
+        <div class="head-div">
+          <h2 class="header-2">Давайте вместе спасать жизни хвостатым существам<br/>и никогда не бросать их в беде!</h2>
+          <p class="post-header">Каждый мохнатый друг заслуживает дома!</p>
+        </div>
+        <ul class="comfort-blocks">
+          <li class="comfort-item">
+            <span class="visually-hidden">Лапка.</span>
+            <h3 class="header-3">Любовь</h3>
+            <p class="paragraph">У каждого животного своя<br>уникальная история,<br>которую мы бережно храним</p>
+          </li>
+          <li class="comfort-item">
+            <span class="visually-hidden">Домик.</span>
+            <h3 class="header-3">Мероприятия</h3>
+            <p class="paragraph">Проводим экскурсии<br>и мероприятия, направленные<br>на популяризацию идеи<br>гуманного отношения к животным</p>
+          </li>
+          <li class="comfort-item">
+            <span class="visually-hidden">Телефон.</span>
+            <h3 class="header-3">Коммуникация</h3>
+            <p class="paragraph">Сотрудничаем с волонтёрами<br>и организациями, объединёнными<br>общей целью заботы<br>о братьях наших меньших</p>
+          </li>
+        </ul>
+      </section>
+      <section class="interest" data-test="search">
+        <h2 class="header-2">Хотите помочь?</h2>
+        <p class="post-header">Заполните форму, если хотели бы стать семьёй для подопечного нашего приюта,<br/>сделайте пожертвование или просто приходите к нам в гости.<br/>Наши питомцы очень любят общаться!</p>
+        <button class="request-button link" id="openModal2">Забрать питомца!</button>
+      </section>
+    </main>
+    <footer class="footer" data-test="footer">
+      <div class="social-networks">
+        <a href="" class="link max-logo">
+          <img src="images/footer/max.svg" width="128" height="128">
+          <span class="visually-hidden">Логотип MAX.</span>
+        </a>
+      </div>
+    </footer>
+    <div class="modal-container modal-flex">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="header-2">Временно не доступно</h2>
+          <button class="close-modal" type="button" id="closeModal"><span class="visually-hidden">Кнопка-крестик для закрытия модального окна.</span></button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/openModal1.js"></script>
+    <script src="scripts/openModal2.js"></script>
+    <script src="scripts/closeModal.js"></script>
+  </body>
+</html>

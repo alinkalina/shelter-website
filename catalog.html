@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приют</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header class="header" data-test="header">
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="link logo active"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a></li>
+          <li class="fake-logo"></li>
+          <li><a href="index.html" class="menu-link link">Главная</a></li>
+          <li><a href="#about" class="menu-link link">О приюте</a></li>
+          <li><a href="catalog.html" class="menu-link active-link link">Наши животные</a></li>
+        </ul>
+        <ul class="nav-buttons">
+          <li><button class="request-button link" id="openModal1">Забрать питомца!</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" data-test="main">
+      <section class="form">
+        <h1 class="header-1">Наши питомцы</h1>
+        <div class="form-navigation">
+          <a class="form-navigation-item link" href="index.html"><img alt="Домик." src="images/catalog/home.png" width="12" height="12"></a>
+          <span class="form-navigation-item"><img src="images/catalog/breadcrumbs.png" alt="Стрелочка вправо." width="8" height="21"></span>
+          <a class="form-navigation-item link" href="catalog.html">Животные</a>
+        </div>
+        <form class="animals-form" action="" method="post" data-test="filter">
+          <div class="animals-form-part">
+            <fieldset class="animals-form-fieldset">
+              <label class="fieldset-header">Тип:</label>
+              <p class="check-variant">
+                <input class="checkbox" type="checkbox" checked value="cats" id="cats" name="cats"><span class="fake-checkbox"><span class="visually-hidden">Чекбокс отмечен галочкой.</span></span><label class="check-variant-label" for="cats">Кошки</label>
+              </p>
+              <p class="check-variant">
+                <input class="checkbox" type="checkbox" checked value="dogs" id="dogs" name="dogs"><span class="fake-checkbox"><span class="visually-hidden">Чекбокс отмечен галочкой.</span></span><label class="check-variant-label" for="dogs">Собаки</label>
+              </p>
+            </fieldset>
+            <fieldset class="animals-form-fieldset">
+              <label class="fieldset-header">Возраст:</label>
+              <span class="age">
+                <label for="from" class="visually-hidden">Поле ввода минимального возраста</label>
+                <input class="age-input from" value="1" type="number" id="from" name="from">
+                <span class="from-to from">от</span>
+                <label for="to" class="visually-hidden">Поле ввода максимального возраста</label>
+                <input class="age-input to" value="20" type="number" id="to" name="to">
+                <span class="from-to to">до</span>
+              </span>
+            </fieldset>
+          </div>
+          <div class="animals-form-part">
+            <fieldset class="animals-form-fieldset">
+              <label for="submit" class="visually-hidden">Кнопка отправки формы</label>
+              <button class="animals-form-button submit" type="submit" id="submit">Применить</button>
+              <label for="reset" class="visually-hidden">Кнопка сбрасывания введённых данных формы</label>
+              <button class="animals-form-button reset" type="reset" id="reset">Сбросить</button>
+            </fieldset>
+          </div>
+        </form>
+      </section>
+      <section class="animals" data-test="catalog">
+        <div class="catalog-view">
+          <h2 class="header-2">Найдено животных: </h2>
+        </div>
+        <div class="catalog">
+          <div class="card">
+            <a class="link image-link" href="#"><img src="images/catalog/photo-1.jpg" alt="Фото: кошка в приюте." width="300" height="212"></a>
+            <h3 class="header-3">Мурка</h3>
+            <div class="animal-type">
+              <p class="type-item">Кошка</p>
+              <p class="type-item">Возраст: 5</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-test="footer">
+      <div class="social-networks">
+        <a href="" class="link max-logo">
+          <img src="images/footer/max.svg" width="128" height="128">
+          <span class="visually-hidden">Логотип MAX.</span>
+        </a>
+      </div>
+    </footer>
+    <div class="modal-container modal-flex">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="header-2">Временно не доступно</h2>
+          <button class="close-modal" type="button" id="closeModal"><span class="visually-hidden">Кнопка-крестик для закрытия модального окна.</span></button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/openModal1.js"></script>
+    <script src="scripts/closeModal.js"></script>
+  </body>
+</html>
